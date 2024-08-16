@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  db:
+    image: postgres
+    volumes:
+      - postgres-db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=joy_db
+      - POSTGRES_USER=antonymusau
+      - POSTGRES_PASSWORD=464900@Linda
+    ports:
+      - 5432:5432
+volumes:
+  postgres-db:
