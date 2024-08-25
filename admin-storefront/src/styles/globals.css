@@ -110,3 +110,9 @@
     @apply text-[32px] leading-[44px] font-semibold;
   }
 }
+
+.header-logo {
+  height: 10px; /* Specify the exact height */
+  width: 10px; /* Specify the exact width */
+  object-fit: contain; /* Ensure the image fits within the specified dimensions */
+}

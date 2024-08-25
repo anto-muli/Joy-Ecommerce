@@ -1,5 +1,4 @@
 Ecommerce Web Application
-
                 Steps and Explanation
 Step1: Check Prerequisites
         •To install the Ecommerce web app, you need to install the following….
@@ -19,5 +18,5 @@ RUN (docker-compose up –build –d (To create and initialize Postgres containe
                     Create the backend (Admin Panel) and Storefront
 npx create-medusa-app@latest --seed --db-url postgres://username:password@localhost:5432/database name
 How to launch on Localhost
-        •admin (backend) – npx medusa develop
+        •admin (backend) – npx medusa develop ( because i have installe dMedusa Cli, but you can use either Npm start or yarn dev if you include it in your scripts on node_modules directory)
         •admin-storefront – npm run dev (Backend must be running to run the storefront)
