@@ -34,6 +34,7 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
                   <img
                     src="https://res.cloudinary.com/divq9zycw/image/upload/v1723804496/4_ytopcu.png"
                     alt="Menu Logo"
+                    className="w-20 h-12" 
                   />
                 </Popover.Button>
               </div>
