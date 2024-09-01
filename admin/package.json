@@ -13,6 +13,14 @@
     "medusa"
   ],
   "scripts": {
+    "build": "npm run clean && npm run build:server && npm run build:admin",
+    "clean": "rimraf dist",
+    "build:server": "rimraf dist && tsc -p tsconfig.server.json",
+    "build:admin": "medusa-admin build",
+    "start": "medusa start"
+
+    "build:render": "npm install && npm run build",
+  "start:render": "npm run start"
     "clean": "cross-env ./node_modules/.bin/rimraf dist",
     "build": "cross-env npm run clean && npm run build:server && npm run build:admin",
     "build:server": "cross-env npm run clean && tsc -p tsconfig.server.json",
