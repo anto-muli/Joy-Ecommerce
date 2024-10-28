@@ -1,6 +1,6 @@
 {
   "dependencies": {
+    "@medusajs/medusa": "^2.0.1",
     "cross-env": "^7.0.3"
   }
 }
-
