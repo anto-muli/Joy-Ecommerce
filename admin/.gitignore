@@ -20,16 +20,7 @@ coverage
 !src/**
 
 ./tsconfig.tsbuildinfo
-package-lock.json
-yarn.lock
-medusa-db.sql
-build
-.cache
-src/subscribers
-src/repositories
-build
-.github
-data
+
 README.md
 
 
