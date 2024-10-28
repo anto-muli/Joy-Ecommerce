@@ -1,8 +1,7 @@
 import React from "react";
 import { 
   useAdminProduct,
-  useAdminCreateDraftOrder,
-  useMedusa
+  useAdminCreateDraftOrder
 } from "medusa-react";
 import { StepContentProps } from "../../../../widgets/onboarding-flow/onboarding-flow";
 import { Button, Text } from "@medusajs/ui";
@@ -19,7 +18,8 @@ const OrdersListDefault = ({ onNext, isComplete, data }: StepContentProps) => {
     const variant = product.variants[0] ?? null;
     try {
       // check if there is a shipping option and a region
-      // and if not, create demo ones
+      // and if not, create demo ones,
+      //   useMedusa
       const regions = await prepareRegions(client)
       const shipping_options = await prepareShippingOptions(client, regions[0])
 
