@@ -6,8 +6,7 @@ backend directory( in my case "admin". Includes Modules, DTs and plugins) *//
 
 tsconfig.spec.json
 
-/dist
-.env
+
 .DS_Store
 /uploads
 /node_modules
