@@ -1,17 +1,3 @@
 {
     "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
   }
-
-
-  {
-    "builds": [
-      {
-        "src": "package.json",
-        "use": "@vercel/node"
-      }
-    ],
-    "scripts": {
-      "build": "npm run build --admin-only" // Or whatever command you'd like
-    }
-  }
-  
